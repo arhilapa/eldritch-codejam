@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eldritch Horror Helper</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="settings-container">
+		<div class="text">Choose difficulty:</div>
+		<div class="difficult-container">
+			<input type="radio" class="radio difficult-radio" id="simple" name="difficult" value="simple">
+			<label class="difficult" for="simple">Very Easy</label>
+
+			<input type="radio" class="radio difficult-radio" id="easy" name="difficult" value="easy">
+			<label class="difficult" for="easy">Easy</label>
+
+			<input type="radio" class="radio difficult-radio" id="normal" name="difficult" value="normal">
+			<label class="difficult" for="normal">Medium</label>
+
+			<input type="radio" class="radio difficult-radio" id="hard" name="difficult" value="hard">
+			<label class="difficult" for="hard">Hard</label>
+
+			<input type="radio" class="radio difficult-radio" id="hell" name="difficult" value="hell">
+			<label class="difficult" for="hell">Very Hard</label>
+		</div>
+		<div class="text">Choose Ancient:</div>
+		<div class="acients-container">
+			<input type="radio" class="radio ancient-radio" id="azathoth" name="ancient" value="azathoth">
+			<label class="ancient" for="azathoth">
+				<img src="assets/Ancients/Azathoth.png" alt="azathoth" class="ancient-img">
+			</label>
+
+			<input type="radio" class="radio ancient-radio" id="cthulthu" name="ancient" value="cthulthu">
+			<label class="ancient" for="cthulthu">
+				<img src="assets/Ancients/Cthulthu.png" alt="cthulthu" class="ancient-img">
+			</label>
+
+			<input type="radio" class="radio ancient-radio" id="logSothoth" name="ancient" value="logSothoth">
+			<label class="ancient" for="logSothoth">
+				<img src="assets/Ancients/IogSothoth.png" alt="logSothoth" class="ancient-img">
+			</label>
+
+			<input type="radio" class="radio ancient-radio" id="shubNiggurath" name="ancient" value="shubNiggurath">
+			<label class="ancient" for="shubNiggurath">
+				<img src="assets/Ancients/ShubNiggurath.png" alt="shubNiggurath" class="ancient-img">
+			</label>
+		</div>
+
+		
+	</div>
+
+	<div class="field-container">
+		<button class="knead-container hider">Shuffle deck</button>
+		<div class="deck-container hider">
+			<div class="tracker">
+				<div class="first-stage stage">
+					<div class="text">First stage:</div>
+					 <div class="counters">
+						<div class="green g1"></div>
+						<div class="brown br1"></div>
+						<div class="blue bl1"></div>
+					 </div>
+				</div>
+				<div class="second-stage stage">
+					<div class="text">Second stage:</div>
+					<div class="counters">
+						<div class="green g2"></div>
+						<div class="brown br2"></div>
+						<div class="blue bl2"></div>
+					 </div>
+				</div>
+				<div class="third-stage stage">
+					<div class="text">Third stage:</div>
+					<div class="counters">
+						<div class="green g3"></div>
+						<div class="brown br3"></div>
+						<div class="blue bl3"></div>
+					 </div>
+				</div>
+			</div>
+			<div class="deck">
+				<div class="deck-shirt">
+					<img src="assets/mythicCardBackground.png" alt="shirt">
+				</div>
+			</div>
+			<div class="open-card-container">
+				<div class="open-card"></div>
+			</div>
+		</div>
+		<button class="restart hider">Shuffle again</button>
+	</div>
+</div>
+<script src="main.js" type="module"></script>
+</body>
+</html>
